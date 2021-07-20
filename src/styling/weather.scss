@@ -9,3 +9,27 @@
   color: white;
 
 }
+
+.cities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.city {
+  opacity: .3;
+  cursor: default;
+  padding: 2em;
+  .desc {
+    opacity: 0;
+    transition: linear 300ms;
+  }
+  transition: linear 300ms;
+}
+
+.city:hover {
+  opacity: 1;
+  .desc {
+    opacity: 1;
+  }
+}

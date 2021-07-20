@@ -42,24 +42,25 @@ const Weather = () => {
       <br />
       The weather in {searched_city} for the next 5 days is: {weather ? weather.join(', ') : ''}
       <br />
+      <br />
       Suggested cities:
       <br />
       <div className="cities">
         <div className="city">
           <h2>London</h2>
-          <p>{suggested_london}</p>
+          <p className="desc">{suggested_london}</p>
         </div>
         <div className="city">
           <h2>Paris</h2>
-          <p>{suggested_paris}</p>
+          <p className="desc">{suggested_paris}</p>
         </div>
         <div className="city">
           <h2>Rome</h2>
-          <p>{suggested_rome}</p>
+          <p className="desc">{suggested_rome}</p>
         </div>
         <div className="city">
           <h2>Berlin</h2>
-          <p>{suggested_berlin}</p>
+          <p className="desc">{suggested_berlin}</p>
         </div>
       </div>
     </div>
