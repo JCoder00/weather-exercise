@@ -10,7 +10,6 @@ const Weather = () => {
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${searched_city}&cnt=5&appid=${process.env.REACT_APP_WEATHER_API_KEY}`).then(res => {
       let forecast = []
       for (let i = 0; i < res.data.list.length; i++) {
-        console.log(res.data.list[i].weather[0].description);
         forecast.push(res.data.list[i].weather[0].description);
       }
       updateWeather(forecast);
